@@ -3,6 +3,6 @@ const toys = [{ id: 5, name: 'Buzz MyYear' }, { id: 11, name: 'Action Woman' }, 
 for (const toy of toys) {
     let toyName = toy.name;
     if (toyName.includes("gato")) {
-
+        www
     }
 }
