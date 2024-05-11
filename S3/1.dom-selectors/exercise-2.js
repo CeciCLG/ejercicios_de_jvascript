@@ -1,3 +1,3 @@
 let text = document.querySelector(`#pillado`);
 
-console.log(text);
+console.log(text.textContent);
