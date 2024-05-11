@@ -2,4 +2,6 @@ const RickAndMortyCharacters = ["Rick", "Beth", "Jerry", "Morty", "Summer", "Lap
 
 RickAndMortyCharacters.pop;
 
-console.log(RickAndMortyCharacters[0] + " " + RickAndMortyCharacters[4]);
+let lastIndex = RickAndMortyCharacters.length - 1;
+
+console.log(RickAndMortyCharacters[0] + " " + lastIndex);
