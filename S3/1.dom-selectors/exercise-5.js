@@ -1,6 +1,4 @@
-let span = document.querySelector(`span`);
-
-textContent
+let span = document.querySelectorAll(`[data-funtion="testMe"]`);
 
 console.log(span);
 
