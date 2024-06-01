@@ -1,4 +1,5 @@
-let span = document.querySelectorAll(`[data-funtion="testMe"]`);
+let dataset = document.querySelectorAll(`[data-function="testMe"]`);
 
-console.log(span);
-
+dataset.forEach(data => {
+    console.log(data.innerText);
+});
