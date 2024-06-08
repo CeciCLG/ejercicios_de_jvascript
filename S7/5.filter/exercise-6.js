@@ -8,3 +8,11 @@ const streamers = [{
     name: 'AuronPlay', age: 33, gameMorePlayed: 'Among Us'
 }];
 
+const streamesLol = streamers.filter((streamer) => {
+   return streamer.gameMorePlayed.includes(League); 
+})
+
+streamesLol = streamesLol.filter((streamer) => {
+    streamer.age > 35
+    return streamer.name.toUppercase
+})
