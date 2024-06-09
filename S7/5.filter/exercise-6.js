@@ -9,10 +9,14 @@ const streamers = [{
 }];
 
 const streamesLol = streamers.filter((streamer) => {
-   return streamer.gameMorePlayed.includes(League); 
+    let streamerGame = streamer.gameMorePlayed;
+    return streamerGame.includes('League');
 })
 
-streamesLol = streamesLol.filter((streamer) => {
-    streamer.age > 35
-    return streamer.name.toUppercase
-})
+for (let i = 0; i < streamesLol.length; i++) {
+    if (streamesLol[i].age > 35) {
+        streamesLol[i].name = streamesLol[i].name.toUpperCase();
+    }
+}
+
+console.log(streamesLol);
