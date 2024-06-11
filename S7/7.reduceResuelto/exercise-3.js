@@ -1,0 +1,27 @@
+const exams = [
+    { name: 'Abel Cabeza Román', score: 5 },
+    { name: 'Maria Aranda Jimenez', score: 1 },
+    { name: 'Cristóbal Martínez Lorenzo', score: 6 },
+    { name: 'Mercedez Regrera Brito', score: 7 },
+    { name: 'Pamela Anderson', score: 3 },
+    { name: 'Enrique Perez Lijó', score: 6 },
+    { name: 'Pedro Benitez Pacheco', score: 8 },
+    { name: 'Ayumi Hamasaki', score: 4 },
+    { name: 'Robert Kiyosaki', score: 2 },
+    { name: 'Keanu Reeves', score: 10 }
+];
+
+let scores = [];
+
+exams.forEach(exam => {
+    scores.push(exam.score)
+});
+
+const initialValue = 0;
+const scoreTotal = scores.reduce(
+    (accumulator, currentValue) => accumulator + currentValue, initialValue
+);
+
+let scoreMedia = scoreTotal / (exams.length - 1);
+
+console.log(scoreMedia);
